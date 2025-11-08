@@ -23,6 +23,13 @@ const featuredCollections = [
       "Únete a los Riders y sus Monsties para explorar el mundo y forjar vínculos legendarios.",
     accent: "purple",
   },
+  {
+    slug: "peliculas",
+    title: "Colección de películas",
+    description:
+      "Clásicos animados, comedias españolas y rarezas dobladas al castellano listas para tu próxima sesión cine.",
+    accent: "teal",
+  },
 ];
 
 export default function Home() {
