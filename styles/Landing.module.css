@@ -153,6 +153,20 @@
   box-shadow: 0 16px 32px rgba(139, 92, 246, 0.35);
 }
 
+.teal::after {
+  background: linear-gradient(
+    135deg,
+    rgba(45, 212, 191, 0.5),
+    rgba(56, 189, 248, 0.25)
+  );
+}
+
+.teal .cardLink {
+  background: linear-gradient(135deg, #22d3ee, #14b8a6);
+  color: #0f172a;
+  box-shadow: 0 16px 32px rgba(20, 184, 166, 0.35);
+}
+
 @media (max-width: 600px) {
   .sections {
     padding: 1.75rem;

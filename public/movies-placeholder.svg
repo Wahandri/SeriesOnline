@@ -1,0 +1,23 @@
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a" />
+      <stop offset="1" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="badge" x1="160" y1="60" x2="480" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f97316" stop-opacity="0.85" />
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0.85" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="32" fill="url(#gradient)" />
+  <rect x="120" y="80" width="400" height="200" rx="28" fill="url(#badge)" opacity="0.9" />
+  <path d="M276 144c0-8.837 7.163-16 16-16h56c8.837 0 16 7.163 16 16v72c0 8.837-7.163 16-16 16h-56c-8.837 0-16-7.163-16-16v-72z" stroke="#0f172a" stroke-width="8" fill="none" />
+  <path d="M364 168l40 24-40 24v-48z" fill="#0f172a" />
+  <circle cx="208" cy="128" r="20" fill="#f8fafc" opacity="0.2" />
+  <circle cx="432" cy="108" r="16" fill="#f8fafc" opacity="0.2" />
+  <circle cx="192" cy="240" r="24" fill="#f8fafc" opacity="0.2" />
+  <circle cx="452" cy="244" r="22" fill="#f8fafc" opacity="0.2" />
+  <text x="320" y="312" text-anchor="middle" fill="#f8fafc" font-size="28" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" opacity="0.85">
+    Próximamente en tu maratón
+  </text>
+</svg>

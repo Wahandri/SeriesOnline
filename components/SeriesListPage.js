@@ -8,6 +8,21 @@ function defaultThumbnailResolver(episode) {
   return episode.thumbnail || "";
 }
 
+const defaultProgressFormatter = (seenCount, totalCount) =>
+  `${seenCount} / ${totalCount} episodios vistos`;
+
+const defaultCardAriaLabel = (episode) =>
+  `Reproducir episodio ${episode.id}: ${episode.title}`;
+
+const defaultRenderEpisodeTitle = (episode) =>
+  `${episode.id}. ${episode.title}`;
+
+const defaultToggleButtonLabel = (isSeen) =>
+  isSeen ? "Visto" : "Marcar visto";
+
+const defaultToggleButtonAriaLabel = (isSeen) =>
+  isSeen ? "Marcar como no visto" : "Marcar como visto";
+
 export default function SeriesListPage({
   episodes,
   storageKey,
@@ -16,6 +31,15 @@ export default function SeriesListPage({
   hero,
   getEpisodeThumbnail = defaultThumbnailResolver,
   onThumbnailError,
+  searchLabel = "Buscar capítulo",
+  searchPlaceholder = "Escribe el nombre del capítulo",
+  emptyStateMessage = "No se encontraron capítulos con ese nombre.",
+  resetButtonLabel = "Borrar progreso",
+  progressFormatter = defaultProgressFormatter,
+  cardAriaLabel = defaultCardAriaLabel,
+  renderEpisodeTitle = defaultRenderEpisodeTitle,
+  toggleButtonLabel = defaultToggleButtonLabel,
+  toggleButtonAriaLabel = defaultToggleButtonAriaLabel,
 }) {
   const router = useRouter();
   const [seenEpisodes, setSeenEpisodes] = useState([]);
@@ -100,14 +124,14 @@ export default function SeriesListPage({
 
           <div className={styles.searchWrapper}>
             <label className={styles.searchLabel} htmlFor="episode-search">
-              Buscar capítulo
+              {searchLabel}
             </label>
             <input
               id="episode-search"
               type="search"
               value={searchTerm}
               onChange={handleSearchChange}
-              placeholder="Escribe el nombre del capítulo"
+              placeholder={searchPlaceholder}
               className={styles.searchInput}
             />
           </div>
@@ -123,7 +147,7 @@ export default function SeriesListPage({
               />
             </div>
             <p className={styles.progressText}>
-              {seenEpisodes.length} / {episodes.length} episodios vistos
+              {progressFormatter(seenEpisodes.length, episodes.length)}
             </p>
           </div>
 
@@ -131,7 +155,7 @@ export default function SeriesListPage({
             onClick={() => updateProgress([])}
             className={styles.resetBtn}
           >
-            Borrar progreso
+            {resetButtonLabel}
           </button>
         </div>
       </header>
@@ -139,7 +163,7 @@ export default function SeriesListPage({
       <main className={styles.grid}>
         {filteredEpisodes.length === 0 ? (
           <p className={styles.emptyState}>
-            No se encontraron capítulos con ese nombre.
+            {emptyStateMessage}
           </p>
         ) : null}
 
@@ -162,7 +186,7 @@ export default function SeriesListPage({
               role="button"
               tabIndex={0}
               onKeyDown={handleKeyDown}
-              aria-label={`Reproducir episodio ${episode.id}: ${episode.title}`}
+              aria-label={cardAriaLabel(episode)}
             >
               <div className={styles.thumbWrapper}>
                 <img
@@ -180,16 +204,16 @@ export default function SeriesListPage({
               </div>
 
               <h2 className={styles.epTitle}>
-                {episode.id}. {episode.title}
+                {renderEpisodeTitle(episode)}
               </h2>
 
               <button
                 className={`${styles.vistoBtn} ${seen ? styles.vistoActivo : ""}`}
                 onClick={(event) => handleToggleSeen(episode.id, event)}
                 aria-pressed={seen}
-                aria-label={seen ? "Marcar como no visto" : "Marcar como visto"}
+                aria-label={toggleButtonAriaLabel(seen)}
               >
-                {seen ? "Visto" : "Marcar visto"}
+                {toggleButtonLabel(seen)}
               </button>
             </div>
           );
