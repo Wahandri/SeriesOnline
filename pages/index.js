@@ -16,6 +16,13 @@ const featuredCollections = [
       "Siente la emoción de los combates entre peonzas y acompaña a Tyson y sus amigos en cada torneo.",
     accent: "blue",
   },
+  {
+    slug: "monster-hunter-stories",
+    title: "Monster Hunter Stories",
+    description:
+      "Únete a los Riders y sus Monsties para explorar el mundo y forjar vínculos legendarios.",
+    accent: "purple",
+  },
 ];
 
 export default function Home() {
