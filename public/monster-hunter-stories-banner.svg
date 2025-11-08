@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 600" role="img" aria-labelledby="title desc">
+  <title id="title">Banner Monster Hunter Stories</title>
+  <desc id="desc">Fondo degradado con silueta de montañas y un jinete sobre un monstruo.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1d2c4f" />
+      <stop offset="60%" stop-color="#352658" />
+      <stop offset="100%" stop-color="#4a1f48" />
+    </linearGradient>
+    <linearGradient id="mountain" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#251b3b" />
+      <stop offset="100%" stop-color="#382145" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="600" fill="url(#sky)" />
+  <g fill="#ffffff" opacity="0.06">
+    <circle cx="180" cy="140" r="80" />
+    <circle cx="1320" cy="200" r="120" />
+    <circle cx="960" cy="120" r="90" />
+  </g>
+  <path d="M0 440 L160 420 L320 450 L480 420 L640 470 L800 430 L960 450 L1120 420 L1280 440 L1440 410 L1440 600 L0 600 Z" fill="url(#mountain)" />
+  <path d="M760 360 q40 -80 120 -60 q40 10 80 -10 q-20 60 -60 90 q-40 30 -60 90 q-40 -70 -80 -90 q-30 -15 -60 -10 q40 -40 60 -100 z" fill="#1b1028" opacity="0.8" />
+  <path d="M850 310 q30 -40 60 -30 q20 10 30 30 q-20 10 -30 40 q-10 30 -40 30 q-10 -40 -20 -70 z" fill="#150c20" opacity="0.8" />
+</svg>
