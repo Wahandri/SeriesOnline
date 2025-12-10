@@ -2,46 +2,64 @@
   {
     "id": 1,
     "title": "Goofy e hijo",
-    "url": "https://mega.nz/embed/ekNESD4J#QVKFDEsK0DNsXEqtJlBUapcpB8BKWypO9pc_4H5S5y4"
+    "url": "https://mega.nz/embed/ekNESD4J#QVKFDEsK0DNsXEqtJlBUapcpB8BKWypO9pc_4H5S5y4",
+    "thumbnail": "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/6e4fbcf0-3a5c-43d1-b878-dfb7efd3a824/compose?aspectRatio=1.78&format=webp&width=1200",
+    "description": "Goofy intenta estrechar lazos con su hijo Max en un viaje por carretera lleno de desventuras."
   },
   {
     "id": 2,
-    "title": "La gran aventura de Mortadelo y Filemón",
-    "url": "https://drive.google.com/file/d/1sXGedhxZMpD_rlX8CzlT3Hcb7IhItoX7/preview"
+    "title": "La gran aventura de Mortadelo y Filem\u00f3n",
+    "url": "https://drive.google.com/file/d/1sXGedhxZMpD_rlX8CzlT3Hcb7IhItoX7/preview",
+    "thumbnail": "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/6a5df095-7f77-48f3-a7c3-40fc7d76ec8e/compose?aspectRatio=1.78&format=webp&width=1200",
+    "description": "El profesor Bacterio pierde su invento m\u00e1s peligroso y la T.I.A. encarga a Mortadelo y Filem\u00f3n recuperarlo."
   },
   {
     "id": 3,
     "title": "Los reyes magos",
-    "url": "https://drive.google.com/file/d/1yxalTMEEv5BPXpQsnlGovqzbA0yFBLem/preview"
+    "url": "https://drive.google.com/file/d/1yxalTMEEv5BPXpQsnlGovqzbA0yFBLem/preview",
+    "thumbnail": "https://cdn.sincroguia.tv/uploads/programs/l/o/s/xlos-reyes-magos-73937_SPA-95.jpg.pagespeed.ic.kFBfoUV68i.jpg",
+    "description": "Melchor, Gaspar y Baltasar emprenden un viaje lleno de peligros para adorar al ni\u00f1o Jes\u00fas y frustrar los planes de Herodes."
   },
   {
     "id": 4,
     "title": "Shaolin Soccer",
-    "url": "https://drive.google.com/file/d/1jlRnJGArWX7h5O5z-VCZd_vyFcX4E1j4/preview"
+    "url": "https://drive.google.com/file/d/1jlRnJGArWX7h5O5z-VCZd_vyFcX4E1j4/preview",
+    "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/f49e499ac518d41d9fc8387b6dd88c075dfffe46b2d25756b498c337bce50c7f.jpg",
+    "description": "Un ex monje Shaolin re\u00fane a sus hermanos para formar un equipo de f\u00fatbol y popularizar las artes marciales."
   },
   {
     "id": 5,
     "title": "Super Mario Bros",
-    "url": "https://drive.google.com/file/d/1bSBT6aYklxAdHa1AL43li5sQXWBvRTWp/preview"
+    "url": "https://drive.google.com/file/d/1bSBT6aYklxAdHa1AL43li5sQXWBvRTWp/preview",
+    "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/8f736db97b078f3cabac0016447a7a8830e5e2aa39cbaec68a67df46c3865de3.jpg",
+    "description": "Dos fontaneros de Brooklyn viajan a otra dimensi\u00f3n para rescatar a una princesa de un dictador malvado."
   },
   {
     "id": 6,
     "title": "Tekken - The Animation Movie",
-    "url": "https://drive.google.com/file/d/1jR7hvdVw0D5rk5Kf5hyoTpXJ4VNzcHyN/preview"
+    "url": "https://drive.google.com/file/d/1jR7hvdVw0D5rk5Kf5hyoTpXJ4VNzcHyN/preview",
+    "thumbnail": "https://i.ebayimg.com/images/g/lGcAAOSwydpm8RHa/s-l1200.jpg",
+    "description": "Kazuya Mishima busca venganza contra su padre Heihachi en el Torneo del Rey del Pu\u00f1o de Hierro."
   },
   {
     "id": 7,
-    "title": "Una película de Minecraft (2025)",
-    "url": "https://drive.google.com/file/d/1ZDsV1vKkmee8IHGwe9EQW5v7YheKAgJa/preview"
+    "title": "Una pel\u00edcula de Minecraft (2025)",
+    "url": "https://drive.google.com/file/d/1ZDsV1vKkmee8IHGwe9EQW5v7YheKAgJa/preview",
+    "thumbnail": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/05eee581-3112-4515-b17f-219ff6265ef8/1d84e9fb-47e8-11f0-b15c-121c7645ec99?host=wbd-images.prod-vod.h264.io&partner=beamcom",
+    "description": "Steve y sus amigos deben proteger el Overworld de una amenaza inminente en esta adaptaci\u00f3n del famoso videojuego."
   },
   {
     "id": 8,
-    "title": "Aquí llega Condemor el pecador de la pradera (1996)",
-    "url": "https://drive.google.com/file/d/1IdeuQ20o7NDJRRqQcT-8Ls7JTAR0usFI/preview"
+    "title": "Aqu\u00ed llega Condemor el pecador de la pradera (1996)",
+    "url": "https://drive.google.com/file/d/1IdeuQ20o7NDJRRqQcT-8Ls7JTAR0usFI/preview",
+    "thumbnail": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F2%2Fgracenote%2F2db9f26f0c61fd38de9de238175d4f10.jpg",
+    "description": "Un arist\u00f3crata franc\u00e9s y su criado se ven envueltos en una aventura en el Lejano Oeste tras un naufragio."
   },
   {
     "id": 9,
     "title": "Bracula: Condemor II HD (1997)",
-    "url": "https://drive.google.com/file/d/1ynfzWu5-TIH4zRk7ot6817LZyBmepwjY/preview"
+    "url": "https://drive.google.com/file/d/1ynfzWu5-TIH4zRk7ot6817LZyBmepwjY/preview",
+    "thumbnail": "https://m.media-amazon.com/images/S/pv-target-images/ed9fed189c327a7c15063e012f06e4b8ede9554f1c773707ecf2713c002556a4.png",
+    "description": "Condemor y Lucas llegan a un castillo en Transilvania donde se enfrentan a vampiros y monstruos."
   }
 ]

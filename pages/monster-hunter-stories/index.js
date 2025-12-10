@@ -9,7 +9,7 @@ const HERO_CONFIG = {
   title: "Monster Hunter Stories",
   subtitle:
     "Acompaña a Lute y su Rathalos en una aventura llena de vínculos y batallas inolvidables.",
-  bannerImage: "/monster-hunter-stories-banner.svg",
+  bannerImage: "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/2x1_NSwitchDS_MonsterHunterStories_image1600w.jpg",
 };
 
 const getThumbnail = (episode) => episode.thumbnail || PLACEHOLDER_THUMB;

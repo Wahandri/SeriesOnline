@@ -1,68 +1,61 @@
-import Link from "next/link";
+import Head from "next/head";
+import Hero from "@/components/Hero";
+import ContentRow from "@/components/ContentRow";
 import styles from "@/styles/Landing.module.css";
 
-const featuredCollections = [
-  {
-    slug: "digimon",
-    title: "Digimon Adventure",
-    description:
-      "Revive las aventuras digitales de Tai, Agumon y el resto de los Niños Elegidos en el Digimundo.",
-    accent: "orange",
-  },
-  {
-    slug: "beyblade",
-    title: "Beyblade",
-    description:
-      "Siente la emoción de los combates entre peonzas y acompaña a Tyson y sus amigos en cada torneo.",
-    accent: "blue",
-  },
-  {
-    slug: "monster-hunter-stories",
-    title: "Monster Hunter Stories",
-    description:
-      "Únete a los Riders y sus Monsties para explorar el mundo y forjar vínculos legendarios.",
-    accent: "purple",
-  },
-  {
-    slug: "peliculas",
-    title: "Colección de películas",
-    description:
-      "Clásicos animados, comedias españolas y rarezas dobladas al castellano listas para tu próxima sesión cine.",
-    accent: "teal",
-  },
-];
+// Import data
+import peliculas from "@/data/peliculas.json";
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <main className={styles.content}>
-        <section className={styles.hero}>
-          <h1 className={styles.title}>Series en castellano</h1>
-          <p className={styles.subtitle}>
-            Tu catálogo de series y películas clásicas dobladas al castellano, organizado y listo para maratonear.
-          </p>
-        </section>
+  // Select a random item for the Hero.
+  const heroItem = peliculas.find((p) => p.title.includes("Mario")) || peliculas[0];
 
-        <section className={styles.sections}>
-          <h2 className={styles.sectionHeading}>Explora las colecciones disponibles</h2>
-          <div className={styles.grid}>
-            {featuredCollections.map((collection) => (
-              <article
-                key={collection.slug}
-                className={`${styles.card} ${styles[collection.accent]}`}
-              >
-                <div className={styles.cardHeader}>
-                  <h3 className={styles.cardTitle}>{collection.title}</h3>
-                </div>
-                <p className={styles.cardDescription}>{collection.description}</p>
-                <Link href={`/${collection.slug}`} className={styles.cardLink}>
-                  Ver colección
-                </Link>
-              </article>
-            ))}
-          </div>
-        </section>
-      </main>
+  // Define Series data manually
+  const series = [
+    {
+      id: "digimon",
+      title: "Digimon Adventure",
+      thumbnail: "/header.jpg",
+      link: "/digimon",
+      description: "Sigue las aventuras de Tai y los Niños Elegidos en el Mundo Digital junto a sus compañeros Digimon.",
+    },
+    {
+      id: "beyblade",
+      title: "Beyblade",
+      thumbnail: "/beyblade.jpg",
+      link: "/beyblade",
+      description: "Tyson Granger y sus amigos compiten para convertirse en los mejores Beybladers del mundo.",
+    },
+    {
+      id: "monster-hunter-stories",
+      title: "Monster Hunter Stories",
+      thumbnail: "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/2x1_NSwitchDS_MonsterHunterStories_image1600w.jpg",
+      link: "/monster-hunter-stories",
+      description: "Lute y sus amigos se embarcan en una aventura para convertirse en Riders y formar vínculos con monstruos.",
+    },
+  ];
+
+  // Combine series and a few movies for the Hero carousel
+  const heroItems = [...series, ...peliculas.slice(0, 5)];
+
+  return (
+    <div className={styles.app}>
+      <Head>
+        <title>SeriesOnline - Tu Streaming Favorito</title>
+        <meta name="description" content="Ver series y películas online" />
+      </Head>
+
+      <Hero items={heroItems} />
+
+      <div className={styles.rowsContainer}>
+        <ContentRow title="Series" items={series} isLandscape={true} />
+        <ContentRow
+          title="Películas"
+          items={peliculas}
+          linkPrefix="/peliculas/ver"
+          isLandscape={true}
+        />
+      </div>
     </div>
   );
 }

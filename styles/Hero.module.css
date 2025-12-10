@@ -1,0 +1,60 @@
+.hero {
+    height: 448px;
+    color: white;
+    object-fit: contain;
+    position: relative;
+    transition: transform 450ms;
+}
+
+.heroLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+.heroContents {
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+
+.textContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    /* Limit width */
+    display: inline-block;
+    /* Fit content */
+}
+
+.heroTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    backdrop-filter: blur(5px);
+}
+
+.heroDescription {
+    width: 100%;
+    /* Adjust to container */
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    /* Slightly larger */
+    text-shadow: none;
+    /* Remove shadow as we have background */
+}
+
+.heroFadeBottom {
+    height: 7.4rem;
+    background-image: linear-gradient(180deg,
+            transparent,
+            rgba(37, 37, 37, 0.61),
+            #111);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
