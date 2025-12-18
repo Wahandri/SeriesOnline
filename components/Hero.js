@@ -13,7 +13,9 @@ export default function Hero({ items }) {
         const interval = setInterval(() => {
             setFade(true); // Start fade out
             setTimeout(() => {
-                setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+                // Select a random index
+                const randomIndex = Math.floor(Math.random() * items.length);
+                setCurrentIndex(randomIndex);
                 setFade(false); // Start fade in
             }, 500); // Wait for fade out to complete (matches CSS transition)
         }, 5000);

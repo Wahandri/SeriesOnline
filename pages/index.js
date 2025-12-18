@@ -35,8 +35,8 @@ export default function Home() {
     },
   ];
 
-  // Combine series and a few movies for the Hero carousel
-  const heroItems = [...series, ...peliculas.slice(0, 5)];
+  // Combine series and ALL movies for the Hero carousel
+  const heroItems = [...series, ...peliculas];
 
   return (
     <div className={styles.app}>
